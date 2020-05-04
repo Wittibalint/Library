@@ -1,0 +1,32 @@
+<div style="margin-left: 2rem;">
+  <div>
+        {{book.name | uppercase}}
+      <button type="button" class="btn btn-primary"
+      routerLink="/Book/{{book.id}}/edit">Edit</button>
+    <button type="button" class="btn btn-primary"
+    (click)="delete(book)">Delete</button>
+  </div>
+  <div><span>id: </span>{{book.id}}</div> 
+  <div style="max-width: 500px; height:unset; margin-left:  3rem; margin-top: 5rem">
+    <tr>
+      <td style="max-width: 300px;">
+        <tr>
+          <h1>{{book.name}}</h1>
+        </tr>
+        <tr>
+          <h3>Author: <span  style="white-space: nowrap;">{{book.author}}</span></h3>
+        </tr>
+        <tr>
+          {{book.description}}
+        </tr>
+      </td>
+      <td>  
+        <img src="{{book.img}}" style="width:200px;height:300px; vertical-align:top;" alt="Img is unavailable"/>     
+      </td>
+    </tr> 
+      
+  </div>
+  
+    <button type="button" class="btn btn-primary"
+    (click)="goBack()">Go back</button>
+  </div>

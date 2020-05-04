@@ -1,0 +1,11 @@
+  <ul class="list-group">
+    <li *ngFor="let book of books">
+      <div>
+      <button class="list-group-item">
+      <a routerLink="/Book/{{book.id}}">
+        <span class="fa fa-book"></span> {{book.name}}
+      </a>
+      </button>
+    </div>
+    </li>
+  </ul>

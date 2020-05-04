@@ -1,0 +1,9 @@
+<div class="grid grid-pad">
+    <a *ngFor="let book of books" class="col-1-4"
+        routerLink="/Book/{{book.id}}">
+      <div class="module" style="white-space: nowrap;
+       overflow: hidden;">
+        <h4>{{book.name}}</h4>
+      </div>
+    </a>
+  </div>
